@@ -20,5 +20,8 @@ namespace ComuterWPF
         {
             InitializeComponent();
         }
+
+        public const string ConnectionString = "Server=localhost;Database=computer;Uid=root;Password=;SslMode=None";
+
     }
 }
