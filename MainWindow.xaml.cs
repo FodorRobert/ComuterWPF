@@ -1,4 +1,5 @@
 ﻿using MySqlConnector;
+using System.Data;
 using System.Windows;
 
 namespace ComuterWPF
@@ -11,29 +12,80 @@ namespace ComuterWPF
         public MainWindow()
         {
             InitializeComponent();
+            ListComputers();
         }
 
         public const string ConnectionString = "Server=localhost;Database=computer;Uid=root;Password=;SslMode=None";
 
-        public static void connect()
+        private void ListComputers()
         {
-            using (var connection = new MySqlConnection(ConnectionString)
+            try
             {
+                
+                using (var connection = new MySqlConnection(ConnectionString))
 
-                connection.Open();
-
-            string sql = "select accounts.roles_id from accounts where accounts.username = @username and accounts.pass = @password";
-            using (var command = new MySqlCommand(sql, connection))
-            {
-
-                using (var reader = command.ExecuteReader())
                 {
+                    connection.Open();
+                    string sql = "SELECT * FROM comp";
 
+                    using (MySqlCommand cmdSel = new MySqlCommand(sql, connection))
+                    {
+                        DataTable dt = new DataTable();
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmdSel);
+                        da.Fill(dt);
+                        dataGrid1.ItemsSource = dt.DefaultView;
+                    }
+
+                    connection.Close();
 
                 }
+                
             }
+            catch (Exception ex)
+            {
 
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        private void ListOs()
+        {
+            try
+            {
+
+                using (var connection = new MySqlConnection(ConnectionString))
+
+                {
+                    connection.Open();
+                    string sql = "SELECT * FROM osystem";
+
+                    using (MySqlCommand cmdSel = new MySqlCommand(sql, connection))
+                    {
+                        DataTable dt = new DataTable();
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmdSel);
+                        da.Fill(dt);
+                        dataGrid1.ItemsSource = dt.DefaultView;
+                    }
+
+                    connection.Close();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Ops_Click(object sender, RoutedEventArgs e)
+        {
+            ListOs();
+        }
+
+        private void comp_Click(object sender, RoutedEventArgs e)
+        {
+            ListComputers();
+        }
     }
 }

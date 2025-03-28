@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ComuterWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ComputerShop" Height="400" Width="700">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="574,187,0,0" VerticalAlignment="Top" Height="50" Width="100"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="114,187,0,0" VerticalAlignment="Top" Height="50" Width="100"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="294,58,294,68"/>
-
+        <Menu x:Name="menu1" Height="40" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="16">
+            <MenuItem Name="comp" Header="Számítógépek" HorizontalAlignment="Center" VerticalAlignment="Center" Click="comp_Click" Height="40" Width="143" Background="Black" BorderBrush="White" Foreground="White"/>
+            <MenuItem Name="Ops" Header="Op rendszerek" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Ops_Click" Height="41" Width="157" Background="Black" BorderBrush="White" Foreground="White"/>
+        </Menu>
+        <DataGrid x:Name="dataGrid1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,45,153,0"/>
     </Grid>
 </Window>
