@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ComuterWPF"
         mc:Ignorable="d"
-        Title="Regisztracio" Height="450" Width="800">
+        Title="Regisztracio" Height="400" Width="300">
     <Grid>
-        
+        <TextBox HorizontalAlignment="Center" Margin="0,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="32" FontSize="18"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="32" FontSize="18"/>
+        <PasswordBox HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" Width="148" Height="32" FontSize="18"/>
+        <PasswordBox HorizontalAlignment="Center" Margin="0,256,0,0" VerticalAlignment="Top" Width="148" Height="32" FontSize="18"/>
+        <Label Content="Jelszó" HorizontalAlignment="Left" Margin="76,158,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Fullname" HorizontalAlignment="Left" Margin="76,87,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Jelszó újra" HorizontalAlignment="Left" Margin="76,223,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="76,22,0,0" VerticalAlignment="Top" Width="114" FontSize="18"/>
+        <Button Content="Regisztráció" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" Height="38" Width="148" Background="Black" BorderBrush="White" Foreground="White" FontSize="18"/>
+
     </Grid>
 </Window>

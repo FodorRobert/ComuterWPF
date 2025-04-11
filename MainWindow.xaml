@@ -12,7 +12,7 @@
             <MenuItem Name="Ops" Header="Op rendszerek" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Ops_Click" Height="41" Width="157" Background="Black" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.5,0.5"/>
         </Menu>
         <DataGrid x:Name="dataGrid1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,45,10,10"/>
-        <Button x:Name="Belepes_button" Content="Belépés" HorizontalAlignment="Left" Margin="538,0,0,0" VerticalAlignment="Top" Width="76" BorderBrush="#FFFFF8F8" Foreground="#FFFFF8F8" Background="#FF080707" Height="30" Click="Belepes_button_Click"/>
-        <Button x:Name="Reg_button" Content="Regisztráció" HorizontalAlignment="Left" Margin="614,0,0,0" VerticalAlignment="Top" Height="30" Width="76" BorderBrush="#FFFFF8F8" Foreground="#FFFFF8F8" Background="#FF080707" Click="Reg_button_Click"/>
+        <Button x:Name="Belepes_button" Content="Belépés" HorizontalAlignment="Left" Margin="520,0,0,0" VerticalAlignment="Top" Width="76" BorderBrush="#FFFFF8F8" Foreground="#FFFFF8F8" Background="#FF080707" Height="30" Click="Belepes_button_Click"/>
+        <Button x:Name="Reg_button" Content="Regisztráció" HorizontalAlignment="Left" Margin="596,0,0,0" VerticalAlignment="Top" Height="30" Width="76" BorderBrush="#FFFFF8F8" Foreground="#FFFFF8F8" Background="#FF080707" Click="Reg_button_Click"/>
     </Grid>
 </Window>
