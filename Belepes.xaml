@@ -11,7 +11,7 @@
         <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Width="156" Height="28" FontSize="18"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="63,14,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="66,92,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Button x:Name="Belepes_belepes" Content="Belépés" HorizontalAlignment="Center" Margin="0,170,0,0" VerticalAlignment="Top" Height="41" Width="156" FontSize="20" Background="Black" BorderBrush="White" Foreground="White"/>
+        <Button x:Name="Belepes_belepes" Content="Belépés" HorizontalAlignment="Center" Margin="0,170,0,0" VerticalAlignment="Top" Height="41" Width="156" FontSize="20" Background="Black" BorderBrush="White" Foreground="White" Click="Belepes_belepes_Click"/>
 
     </Grid>
 </Window>

@@ -15,7 +15,7 @@
         <Label Content="Fullname" HorizontalAlignment="Left" Margin="76,87,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Jelszó újra" HorizontalAlignment="Left" Margin="76,223,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="76,22,0,0" VerticalAlignment="Top" Width="114" FontSize="18"/>
-        <Button Content="Regisztráció" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" Height="38" Width="148" Background="Black" BorderBrush="White" Foreground="White" FontSize="18"/>
+        <Button Content="Regisztráció" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" Height="38" Width="148" Background="Black" BorderBrush="White" Foreground="White" FontSize="18" Click="Button_Click"/>
 
     </Grid>
 </Window>

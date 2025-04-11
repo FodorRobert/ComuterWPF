@@ -23,5 +23,12 @@ namespace ComuterWPF
         {
             InitializeComponent();
         }
+
+        private void Belepes_belepes_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            this.Close();
+        }
     }
 }
