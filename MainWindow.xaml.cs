@@ -87,5 +87,19 @@ namespace ComuterWPF
         {
             ListComputers();
         }
+
+        private void Reg_button_Click(object sender, RoutedEventArgs e)
+        {
+            Regisztracio subwindow = new Regisztracio();
+            subwindow.Show();
+            this.Close();
+        }
+
+        private void Belepes_button_Click(object sender, RoutedEventArgs e)
+        {
+            Belepes subwindow = new Belepes();
+            subwindow.Show();
+            this.Close();
+        }
     }
 }
