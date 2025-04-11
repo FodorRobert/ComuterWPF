@@ -23,7 +23,6 @@ namespace ComuterWPF
             {
                 
                 using (var connection = new MySqlConnection(ConnectionString))
-
                 {
                     connection.Open();
                     string sql = "SELECT * FROM comp";
